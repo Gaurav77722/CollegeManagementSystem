@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<style>
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  
+}
+input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  
+}
+input[type=date] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+ 
+}
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  
+}
+</style>
+<html>
+<head>
+  <title>Student Register Form</title>
+</head>
+<body bgcolor=lightgray>
+<h1 style="margin-left:550px">Student Admission Form</h1>
+<h2>Personal Information</h2>
+ <form action="insert.php" method="POST">
+  <table>
+   <tr>
+    <td>First Name :</td>
+    <td><input type="text" name="firstname" required></td>
+   </tr>
+   <tr>
+    <td>Last name :</td>
+    <td><input type="text" name="lastname" required></td>
+   </tr>
+   <tr>
+    <td>Gender :</td>
+    <td>
+     <input type="radio" name="gender" value="m" required>Male
+     <input type="radio" name="gender" value="f" required>Female
+    </td>
+   </tr>
+   <tr>
+    <td>Email :</td>
+    <td><input type="email" name="email" required></td>
+   </tr> 
+   <tr>
+    <td>Father's Name :</td>
+    <td><input type="text" name="fname" required></td>
+   </tr>
+   <tr>
+    <td>Mother's Name :</td>
+    <td><input type="text" name="mname" required></td>
+   </tr>
+   <tr>
+    <td>Address :</td>
+    <td><textarea name="address" row="10" cols="19"required></textarea></td>
+   </tr>
+   
+   
+  </table>
+  
+  
+  <table>
+  <h2>Education Information</h2>
+  <tr>
+    <td>Previous School :</td>
+    <td><input type="text" name="pschool" required></td>
+   </tr>
+   <tr>
+    <td>School Address :</td>
+    <td><input type="text" name="saddress" required></td>
+   </tr>
+   <tr>
+    <td>Last Attended :</td>
+    <td><input type="date" name="date" required></td>
+   </tr>
+   <tr>
+    <td>Course :</td>
+    <td><input type="text" name="course" required></td>
+   </tr>
+   <tr>
+    <td> Course Year :</td>
+    <td><input type="text" name="courseyear" required></td>
+   </tr>
+   <tr>
+    <td><input type="submit" value="Submit"></td>
+   </tr>
+  </table>
+  
+  
+  
+  
+  
+ </form>
+</body>
+</html>

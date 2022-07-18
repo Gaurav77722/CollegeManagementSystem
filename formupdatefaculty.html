@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+<style>
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+ 
+}
+input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  
+}
+input[type=date] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  
+}
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+ 
+}
+</style>
+<head>
+  <title>Faculty Registration Form</title>
+</head>
+<body bgcolor=lightgray>
+<h1 style="margin-left:550px">Update Faculty Details</h1>
+<h2>Faculty Information</h2>
+ <form action="formupdatefaculty.php" method="POST">
+  <table>
+   <tr>
+    <td>First Name :</td>
+    <td><input type="text" name="firstname" required></td>
+   </tr>
+   <tr>
+    <td>Last name :</td>
+    <td><input type="text" name="lastname" ></td>
+   </tr>
+   <tr>
+    <td>Class :</td>
+    <td><input type="text" name="class" ></td>
+   </tr>
+   <tr>
+    <td>Years of Experience :</td>
+    <td><input type="text" name="YOE" ></td>
+   </tr>
+   <tr>
+    <td>Gender :</td>
+    <td>
+     <input type="radio" name="gender" value="m" >Male
+     <input type="radio" name="gender" value="f" >Female
+    </td>
+   </tr>
+   <tr>
+    <td>Date Of Birth :</td>
+    <td><input type="date" name="DOB" ></td>
+   </tr>
+   <tr>
+    <td>Email :</td>
+    <td><input type="email" name="email" ></td>
+   </tr>
+   <tr>
+    <td>Address :</td>
+    <td><textarea name="address" row="10" cols="19"></textarea></td>
+   </tr>
+   <tr>
+    <td><input type="submit" value="Submit"></td>
+   </tr>
+   
+   </table>
+  
+  
+  
+  
+  
+ </form>
+</body>
+</html>
