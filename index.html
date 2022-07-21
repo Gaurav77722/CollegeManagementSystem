@@ -107,20 +107,18 @@ textarea {
   
  </form>
 
-// Code to integrate rasa chatbot in the website
 <script>!(function () {
   let e = document.createElement("script"),
     t = document.head || document.getElementsByTagName("head")[0];
   (e.src =
-    "https://cdn.jsdelivr.net/npm/rasa-webchat@1.0.0/lib/index.js"),
+    "https://cdn.jsdelivr.net/npm/rasa-webchat@1.x.x/lib/index.js"),
     // Replace 1.x.x with the version that you want
     (e.async = !0),
     (e.onload = () => {
       window.WebChat.default(
         {
-         initPayload: '/greet',
           customData: { language: "en" },
-          socketUrl: "https://d54a-2401-4900-1d6d-1716-3c73-836b-e882-559a.in.ngrok.io",
+          socketUrl: "https://15e4-2401-4900-1d6d-1716-3c73-836b-e882-559a.in.ngrok.io",
           // add other props here
         },
         null
